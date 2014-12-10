@@ -1,4 +1,4 @@
-from ubuntu:precise
+from ubuntu:trusty
 run useradd -m -s /bin/bash haskell
 run sed -i 's/main$/main universe/' /etc/apt/sources.list && apt-get update && apt-get -y install build-essential libedit2 libglu1-mesa-dev libgmp3-dev libgmp3c2 zlib1g-dev freeglut3-dev curl sudo
 run locale-gen en_US.UTF-8
